@@ -3,19 +3,19 @@ var app = express()
 
 app.get('/', function (req, res) {
   const json = {
-    sts: 0,
-    card_status: 0,
+    status: 1,
+    card_status: 10,
     card_type: 'normal',
-    client_card_id: "123456789",
+    card_id: "ca1111",
   }
   res.json(json)
 })
 
 app.post('/', function (req, res) {
   const json = {
-    sts: 0,
-    card_status: 0,
-    client_card_id: "123456789"
+    status: 2,
+    card_status: 20,
+    result_code: 1
   }
   res.json(json)
 })
